@@ -1,0 +1,75 @@
+/* Responsive rules for tablet and mobile */
+
+@media(max-width:860px){
+ nav{justify-content:space-between;padding-inline:14px}
+ nav .lg{font-size:13px;letter-spacing:.28em}
+ .tk,#srb{display:none}
+ .mnb{display:grid}
+ nav .ln{position:absolute;top:calc(100% + 8px);left:10px;right:10px;display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:12px;border-radius:24px;font-size:16px;color:var(--fg);background:var(--pop);backdrop-filter:saturate(180%) blur(24px);-webkit-backdrop-filter:saturate(180%) blur(24px);border:1px solid var(--line);box-shadow:0 30px 80px -20px rgba(0,0,0,.35);overflow:visible;max-width:none;opacity:0;visibility:hidden;transform:translateY(-12px) scale(.97);transform-origin:90% 0;transition:opacity .3s,transform .5s cubic-bezier(.2,.8,.2,1),visibility 0s .5s}
+ nav.open .ln{opacity:1;visibility:visible;transform:none;transition-delay:0s}
+ nav .ln a{padding:14px 16px;border-radius:16px;background:var(--soft);font-weight:500;opacity:0;transform:translateY(8px);transition:opacity .4s,transform .5s cubic-bezier(.2,.8,.2,1),background .25s}
+ nav.open .ln a{opacity:1;transform:none}
+ nav.open .ln a:nth-child(2){transition-delay:.04s}
+ nav.open .ln a:nth-child(3){transition-delay:.08s}
+ nav.open .ln a:nth-child(4){transition-delay:.12s}
+ nav.open .ln a:nth-child(5){transition-delay:.16s}
+ nav.open .ln a:nth-child(6){transition-delay:.2s}
+ nav.open .ln a:nth-child(7){transition-delay:.24s}
+ nav.open .ln a:nth-child(8){transition-delay:.28s}
+ nav .ln a.on{background:var(--inv);color:var(--inv-fg)}
+ nav .ln a.on::after{display:none}
+ .mfoot{grid-column:1/-1;display:flex;gap:6px;margin-top:4px;padding-top:10px;border-top:1px solid var(--line)}
+ .mfoot a{flex:1;text-align:center;background:transparent!important;border:1px solid var(--line);opacity:0;transition-delay:.32s}
+ nav.open .mfoot a{opacity:1}
+ .pf{width:min(76%,330px);margin:40px auto}
+ .s{padding:90px 6vw}
+ .glow{display:none}
+ .hero{padding-top:calc(48px + 9vh)}
+ .hd{padding-top:calc(48px + 10vh);padding-bottom:60px}
+ .bento,.cards,.ft,.abt,.stats,.facts,.tg,.rd,.fm,.bf,.hw,.cc{grid-template-columns:1fr}
+ .mini{grid-template-columns:1fr 1fr}
+ .ft.r .art,.cc.r .ci{order:0}
+ .dev .bd{grid-template-columns:1fr 1fr}
+ .dev .bd div:last-child{display:none}
+ .proc{grid-template-columns:1fr;gap:30px}
+ .proc::before,.proc::after{display:none}
+ .rr{margin:auto}
+ .kp{grid-template-columns:repeat(auto-fit,minmax(92px,1fr))}
+ .tc{padding:24px}
+ .st{max-width:230px}
+ .tile{min-height:380px;padding:28px}
+ .bm,.cc.r .bm{transform:none}
+ .cc{padding:46px 0;gap:34px}
+ .vp{height:320px}
+ .orbit .rot i{padding:7px 13px}
+ .gum{padding:20px 34px;font-size:18px}
+}
+
+@media(max-width:560px){
+ body{font-size:17px}
+ .s{padding:76px 5.5vw}
+ .hero{padding-inline:5.5vw}
+ .bt{flex-direction:column;align-items:stretch}
+ .bt .b{text-align:center}
+ .gum{width:100%;justify-content:center;padding:20px 24px}
+ .mini{grid-template-columns:1fr}
+ .sw{height:110px}
+ .sz button{font-size:13px;padding:11px 13px}
+ .proc{margin-top:50px}
+ .pr{padding-top:34px}
+ .up{right:14px}
+ .rev{padding:24px}
+ .rev p{font-size:17px}
+ .dev .bd div{aspect-ratio:1}
+}
+
+/* The floating Telegram button is desktop only. Phones and touch screens already have the Contact links. */
+@media(max-width:860px),(hover:none){
+ .fab{display:none}
+ .up{bottom:calc(18px + env(safe-area-inset-bottom,0px))}
+}
+
+@media(prefers-reduced-motion:reduce){
+ *{animation:none!important;transition:none!important}
+ .rv,.stmt span{opacity:1;transform:none;filter:none}
+}
