@@ -1,0 +1,82 @@
+/* Free tools page: cards, inputs and tool-specific UI */
+
+.tg{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.tc{background:var(--card);border:1px solid var(--line);border-radius:30px;padding:clamp(26px,3.4vw,44px);position:relative;overflow:hidden;display:flex;flex-direction:column;gap:18px}
+.tc h3{font-size:clamp(24px,2.6vw,32px)}
+.tc .eb{margin:0}
+.tp,.tv{color:var(--mute);font-size:16px}
+.rd{display:grid;grid-template-columns:130px 1fr;gap:22px;align-items:center}
+.rr{position:relative;width:130px;aspect-ratio:1}
+.rr svg{width:100%;height:100%;transform:rotate(-90deg)}
+.rr circle{fill:none;stroke-width:6}
+.rr .t{stroke:var(--line)}
+.rr .f{stroke:var(--g);stroke-linecap:round;stroke-dasharray:327;stroke-dashoffset:327;transition:stroke-dashoffset .9s cubic-bezier(.2,.8,.2,1)}
+.rr b{position:absolute;inset:0;display:grid;place-items:center;font-size:30px;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.rl{display:grid;gap:8px}
+.rl label{display:flex;gap:12px;align-items:center;font-size:15px;cursor:pointer;color:var(--mute);transition:color .3s;line-height:1.3;position:relative}
+.rl label:hover{color:var(--fg)}
+.rl input{position:absolute;opacity:0}
+.rl i{flex:none;width:20px;height:20px;border-radius:7px;border:1.5px solid var(--line);display:grid;place-items:center;transition:.3s}
+.rl i::after{content:"";width:9px;height:5px;border-left:2px solid var(--on-g);border-bottom:2px solid var(--on-g);transform:rotate(-45deg) scale(0);margin-top:-2px;transition:transform .3s cubic-bezier(.2,.8,.2,1)}
+.rl input:checked+i{background:var(--g);border-color:var(--g)}
+.rl input:checked+i::after{transform:rotate(-45deg) scale(1)}
+.rl input:checked~span{color:var(--fg)}
+.rl input:focus-visible+i{outline:2px solid var(--g);outline-offset:3px}
+.sl{display:grid;gap:20px}
+.sl label{display:block;font-size:15px;color:var(--mute)}
+.sl output{float:right;color:var(--g);font-weight:600}
+input[type=range]{width:100%;accent-color:var(--g);margin-top:10px}
+.kp{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.kp div{padding:16px;border-radius:18px;background:var(--soft);border:1px solid var(--line)}
+.kp b{display:block;font-size:clamp(22px,2.6vw,32px);letter-spacing:-.03em;color:var(--g);font-variant-numeric:tabular-nums}
+.kp span{font-size:13px;color:var(--mute)}
+.pr2{display:flex;gap:14px;align-items:center}
+input[type=color]{width:64px;height:48px;border:1px solid var(--line);border-radius:14px;background:none;padding:4px;cursor:pointer}
+.sw{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;height:150px}
+.sw button{all:unset;cursor:pointer;border-radius:16px;position:relative;overflow:hidden;transition:transform .4s cubic-bezier(.2,.8,.2,1)}
+.sw button:hover{transform:translateY(-8px)}
+.sw span{position:absolute;left:0;right:0;bottom:8px;text-align:center;font-size:11px;color:#fff;mix-blend-mode:difference}
+.fm,.bf{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fm label,.bf label{display:grid;gap:8px;font-size:15px;color:var(--mute)}
+input:not([type]),input[type=email],select,textarea{font:inherit;font-size:16px;color:var(--fg);background:var(--soft);border:1px solid var(--line);border-radius:14px;padding:13px 16px;width:100%;transition:border-color .3s,background .3s}
+input:not([type]):focus,input[type=email]:focus,select:focus,textarea:focus{outline:none;border-color:var(--g);background:color-mix(in srgb,var(--g) 6%,transparent)}
+select option{background:var(--card);color:var(--fg)}
+.out{padding:14px 16px;border-radius:14px;background:color-mix(in srgb,var(--g) 7%,transparent);border:1px dashed color-mix(in srgb,var(--g) 40%,transparent);font-size:14px;word-break:break-all;color:var(--fg);min-height:48px}
+.wide{grid-column:1/-1}
+.fl2{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:30px}
+.fl2 button{font:inherit;font-size:15px;color:var(--mute);background:transparent;border:1px solid var(--line);border-radius:99px;padding:9px 20px;cursor:pointer;transition:.3s}
+.fl2 button:hover{color:var(--fg)}
+.fl2 button.on{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.tc[hidden]{display:none}
+.lb{display:grid;gap:8px;font-size:15px;color:var(--mute)}
+.lim{display:grid;gap:10px}
+.lim div{display:grid;grid-template-columns:1fr auto;gap:4px 12px;font-size:14px}
+.lim em{font-style:normal;color:var(--mute);font-variant-numeric:tabular-nums}
+.lim em.bad{color:#ff8a8a}
+.lim i{grid-column:1/-1;height:4px;border-radius:4px;background:var(--line);overflow:hidden}
+.lim i b{display:block;height:100%;width:0;background:var(--g);border-radius:4px;transition:width .4s,background .3s}
+.lim i b.bad{background:#ff8a8a}
+.gp{background:#fff;border-radius:16px;padding:16px 18px;color:#202124;display:grid;gap:3px;font-family:Arial,sans-serif}
+.gp span{font-size:12px;color:#4d5156}
+.gp b{font-size:19px;font-weight:400;color:#1a0dab;line-height:1.3}
+.gp p{font-size:13px;color:#4d5156;max-width:none;line-height:1.5}
+.cn{display:flex;gap:18px;font-size:13px;color:var(--mute)}
+.cn .bad{color:#ff8a8a}
+.cl{display:grid;gap:8px;font-size:14px;color:var(--mute)}
+.cx{border-radius:16px;padding:22px;font-size:20px;font-weight:600;border:1px solid var(--line);background:#0e0f13;color:#fff;transition:.3s}
+.rt{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.rt b{font-size:30px;letter-spacing:-.03em;margin-right:6px}
+.rt span{padding:6px 14px;border-radius:99px;font-size:13px;border:1px solid var(--line);color:var(--mute)}
+.rt span.ok{color:var(--on-g);background:var(--g);border-color:var(--g)}
+.drop{display:grid;place-items:center;padding:26px;border:1.5px dashed color-mix(in srgb,var(--g) 40%,transparent);border-radius:18px;color:var(--g);cursor:pointer;transition:background .3s}
+.drop:hover{background:color-mix(in srgb,var(--g) 6%,transparent)}
+.drop input{display:none}
+.qr{background:#fff;border-radius:18px;padding:14px;min-height:150px;display:grid;place-items:center;color:#666;font-size:14px}
+.qr svg{width:min(100%,220px);height:auto}
+.sz{display:grid;gap:8px;max-height:330px;overflow:auto;padding-right:4px}
+.sz button{all:unset;cursor:pointer;display:flex;justify-content:space-between;gap:12px;padding:12px 16px;border-radius:14px;border:1px solid var(--line);font-size:14px;transition:.3s}
+.sz button:hover{border-color:var(--g);background:color-mix(in srgb,var(--g) 6%,transparent)}
+.sz button:focus-visible{outline:2px solid var(--g)}
+.sz b{color:var(--g);font-weight:600;font-variant-numeric:tabular-nums}
+.gv{height:120px;border-radius:18px;border:1px solid var(--line)}
+textarea{resize:vertical}
