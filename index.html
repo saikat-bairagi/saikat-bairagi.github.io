@@ -2,239 +2,240 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<script>(function(){var r=document.documentElement;try{var m=localStorage.getItem('sb-mode')||'night',d=new Date().getHours(),t=m==='auto'?(d>=5&&d<11?'morning':d>=11&&d<16?'afternoon':d>=16&&d<20?'evening':'night'):m==='system'?(matchMedia('(prefers-color-scheme: light)').matches?'morning':'night'):m;r.dataset.theme=t;r.dataset.mode=m}catch(e){r.dataset.theme='night'}})()</script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Saikat Bairagi | UI/UX, Websites and Digital Marketing</title>
-<meta name="description" content="Saikat Bairagi: 7+ years freelancing in digital marketing, UI/UX design and website development for small businesses worldwide.">
-<meta name="theme-color" content="#0e0f13">
+<title>Saikat Bairagi | Design, Websites and Digital Marketing</title>
+<meta name="description" content="Saikat Bairagi: 7+ years freelancing in UI/UX design, website development and digital marketing for small businesses worldwide.">
+<meta name="theme-color" content="#000000">
+<meta property="og:title" content="Saikat Bairagi | Design, Websites and Digital Marketing">
+<meta property="og:description" content="UI/UX design, website development and digital marketing for small businesses worldwide.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23000'/%3E%3Ctext x='32' y='45' font-size='38' font-weight='700' text-anchor='middle' fill='%238ff0b5' font-family='Arial'%3ES%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{color-scheme:dark;--h:228;--mx:50vw;--my:30vh;--ink:#0e0f13;--frost:#eceef2;--mute:rgba(236,238,242,.62);
---acc:hsl(var(--h) 36% 78%);--acc2:hsl(calc(var(--h) + 26) 28% 70%);
---glass:rgba(255,255,255,.045);--edge:rgba(255,255,255,.11);--r:26px}
-*{box-sizing:border-box;margin:0;padding:0}
-html.lenis{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}
-body{background:var(--ink);color:var(--frost);font:300 17px/1.7 Manrope,system-ui,sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-::selection{background:var(--acc);color:var(--ink)}
-a{color:inherit;text-decoration:none}
-:focus-visible{outline:2px solid var(--acc);outline-offset:4px;border-radius:8px}
-.bg{position:fixed;inset:0;z-index:-2;overflow:hidden}
-.orb{position:absolute;border-radius:50%;filter:blur(100px);opacity:.2;will-change:transform}
-.o1{width:46vw;height:46vw;left:-10vw;top:-12vw;background:var(--acc)}
-.o2{width:36vw;height:36vw;right:-8vw;top:34vh;background:var(--acc2)}
-.o3{width:34vw;height:34vw;left:30vw;bottom:-16vw;background:hsl(calc(var(--h) - 20) 30% 60%)}
-.glow{position:fixed;z-index:-1;left:0;top:0;width:480px;height:480px;margin:-240px 0 0 -240px;border-radius:50%;background:radial-gradient(circle,hsl(var(--h) 40% 78% / .16),transparent 62%);transform:translate(var(--mx),var(--my));pointer-events:none}
-.grain{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.045;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.8'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
-.bar{position:fixed;left:0;top:0;height:2px;width:100%;transform:scaleX(0);transform-origin:0;background:linear-gradient(90deg,var(--acc),var(--acc2));z-index:60}
-.glass{background:var(--glass);border:1px solid var(--edge);border-radius:var(--r);backdrop-filter:blur(22px) saturate(130%);-webkit-backdrop-filter:blur(22px) saturate(130%);box-shadow:inset 0 1px 0 rgba(255,255,255,.09),0 30px 80px -30px rgba(0,0,0,.6);position:relative;overflow:hidden}
-.spot::before{content:"";position:absolute;inset:0;background:radial-gradient(420px circle at var(--x,50%) var(--y,0%),hsl(var(--h) 40% 80% / .12),transparent 60%);opacity:0;transition:opacity .35s;pointer-events:none}
-.spot:hover::before{opacity:1}
-nav{position:fixed;top:calc(18px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);z-index:50;display:flex;gap:4px;padding:6px;border-radius:999px;max-width:calc(100vw - 24px);overflow-x:auto;scrollbar-width:none}
-nav a{padding:8px 16px;border-radius:999px;font-size:14px;color:var(--mute);transition:.3s;white-space:nowrap}
-nav a:hover,nav a.on{color:var(--ink);background:var(--frost)}
-section{padding:130px 7vw;max-width:1240px;margin:auto}
-h1,h2,h3{font-family:"Instrument Serif",serif;font-weight:400;line-height:1.02;letter-spacing:-.01em}
-h1{font-size:clamp(54px,10vw,142px)}
-h2{font-size:clamp(34px,5vw,64px);margin-bottom:18px}
-h3{font-size:30px;margin-bottom:10px}
-em{font-style:italic;color:var(--acc)}
-p{color:var(--mute);max-width:58ch}
-#top{min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding-top:150px}
-.hello{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border-radius:999px;font-size:14px;color:var(--mute);margin-bottom:30px;width:max-content;max-width:100%}
-.dot{width:8px;height:8px;border-radius:50%;background:#8fd8b0;animation:pulse 2s infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(143,216,176,.6)}70%,100%{box-shadow:0 0 0 10px transparent}}
-.rot{margin:26px 0 0;font-family:"Instrument Serif",serif;font-style:italic;font-size:clamp(24px,3.4vw,40px);color:var(--acc);min-height:1.2em}
-.caret{display:inline-block;width:2px;height:.8em;background:var(--acc);margin-left:5px;vertical-align:-.05em;animation:blink 1s steps(1) infinite}
-@keyframes blink{50%{opacity:0}}
-.lead{margin:26px 0 38px;font-size:19px}
-.btns{display:flex;gap:14px;flex-wrap:wrap}
-.btn{display:inline-block;padding:15px 30px;border-radius:999px;font-weight:500;font-size:15px;transition:transform .25s cubic-bezier(.2,.8,.2,1);will-change:transform}
-.btn.p{background:var(--frost);color:var(--ink)}
-.btn.g{border:1px solid var(--edge);background:var(--glass);backdrop-filter:blur(14px)}
-.scroll{position:absolute;left:7vw;bottom:34px;font-size:13px;color:var(--mute);display:flex;align-items:center;gap:12px}
-.scroll i{width:1px;height:46px;background:linear-gradient(var(--acc),transparent);animation:drop 2s infinite}
-@keyframes drop{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
-.mq{overflow:hidden;padding:24px 0;border-block:1px solid var(--edge);background:var(--glass)}
-.mq div{display:flex;gap:60px;width:max-content;animation:mq 36s linear infinite;font-family:"Instrument Serif",serif;font-size:32px;color:var(--mute)}
-@keyframes mq{to{transform:translateX(-50%)}}
-.pin{max-width:none;padding:0;height:520vh;position:relative}
-.stick{position:sticky;top:0;height:100svh;max-width:1240px;margin:auto;padding:0 7vw;display:grid;grid-template-columns:.85fr 1.15fr;gap:50px;align-items:center}
-.tabs{list-style:none;margin-top:34px;position:relative;padding-left:26px}
-.tabs::before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:1px;background:var(--edge)}
-.fill{position:absolute;left:0;top:6px;bottom:6px;width:1px;background:var(--acc);transform:scaleY(0);transform-origin:top}
-.tabs li{padding:9px 0;font-size:19px;color:rgba(236,238,242,.35);transition:.4s}
-.tabs li.on{color:var(--frost);transform:translateX(8px)}
-.wr{position:relative;height:min(560px,68svh)}
-.pn{position:absolute;inset:0;padding:clamp(26px,4vw,52px);opacity:0;transform:translateY(26px);filter:blur(6px);transition:opacity .6s,transform .7s cubic-bezier(.2,.8,.2,1),filter .6s;pointer-events:none;display:flex;flex-direction:column;justify-content:center}
-.pn.on{opacity:1;transform:none;filter:none;pointer-events:auto}
-.pn h3{font-size:clamp(30px,4vw,46px)}
-.pn p{font-size:16px;margin-bottom:22px}
-.chips{display:flex;flex-wrap:wrap;gap:10px}
-.chips span{padding:8px 16px;border-radius:999px;border:1px solid var(--edge);background:var(--glass);font-size:14px}
-.pn .chips span{opacity:0;transform:translateY(10px);transition:.5s}
-.pn.on .chips span{opacity:1;transform:none}
-.pn.on .chips span:nth-child(2){transition-delay:.12s}.pn.on .chips span:nth-child(3){transition-delay:.24s}.pn.on .chips span:nth-child(4){transition-delay:.36s}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:46px;perspective:1100px}
-.card{padding:32px;transition:transform .2s ease-out;transform-style:preserve-3d}
-.card p{font-size:15px}
-.mock{height:120px;border-radius:14px;border:1px solid var(--edge);margin-bottom:24px;padding:12px;background:rgba(255,255,255,.03);display:grid;gap:8px;grid-template-columns:2fr 1fr;grid-template-rows:auto 1fr auto}
-.mock i{display:block;border-radius:6px;background:rgba(255,255,255,.1)}
-.mock .a{grid-column:1/3;height:8px;width:40%}.mock .b{background:linear-gradient(135deg,hsl(var(--h) 30% 60% / .5),transparent)}
-ul.l{list-style:none;margin-top:14px;display:grid;gap:6px;font-size:14px;color:var(--mute)}
-ul.l li::before{content:"";display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--acc);margin-right:10px;vertical-align:middle}
-.prod{display:grid;grid-template-columns:1fr 1fr;gap:40px;padding:clamp(30px,5vw,60px);align-items:center}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:46px}
-.stat{padding:38px 28px;text-align:center}
-.stat b{display:block;font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(54px,7vw,88px);line-height:1}
-.stat span{font-size:15px;color:var(--mute)}
-.rev{padding:30px}.rev p{color:var(--frost);font-size:16px;margin-bottom:18px}.rev small{color:var(--mute)}
-.about{display:grid;grid-template-columns:.7fr 1.3fr;gap:56px;align-items:center}
-.ph{padding:8px;max-width:340px;border-radius:50%}.ph img{display:block;width:100%;border-radius:50%;aspect-ratio:1;object-fit:cover}
-.mono{display:grid;place-items:center;aspect-ratio:1;font:400 96px "Instrument Serif",serif;color:var(--acc)}
-.contact{padding:clamp(34px,6vw,80px);text-align:center}
-.contact p{margin:20px auto 38px}
-.links{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:30px}
-.links a{padding:10px 20px;border-radius:999px;border:1px solid var(--edge);font-size:14px;color:var(--mute);transition:.3s}
-.links a:hover{color:var(--ink);background:var(--frost)}
-footer{text-align:center;padding:40px 7vw 60px;font-size:14px;color:var(--mute)}
-.rv{opacity:0;transform:translateY(34px) scale(.985);filter:blur(8px);transition:opacity .9s,transform .9s cubic-bezier(.2,.8,.2,1),filter .9s}
-.rv.in{opacity:1;transform:none;filter:none}
-.rv.done{transition:transform .2s ease-out;transition-delay:0s!important}
-@media(max-width:860px){.stick{grid-template-columns:1fr;gap:20px;align-content:center}.tabs{display:none}.wr{height:62svh}.grid,.stats,.prod,.about{grid-template-columns:1fr}section{padding:90px 6vw}.glow{display:none}.pin{height:480vh}}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv,.pn .chips span{opacity:1;transform:none;filter:none}}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Syncopate:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/themes.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/ui.css">
+<link rel="stylesheet" href="css/art.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/pages.css">
+<link rel="stylesheet" href="css/work.css">
+<link rel="stylesheet" href="css/tools.css">
+<link rel="stylesheet" href="css/games.css">
+<link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-<div class="bar" id="bar"></div>
-<div class="bg"><i class="orb o1"></i><i class="orb o2"></i><i class="orb o3"></i></div>
-<div class="glow"></div><div class="grain"></div>
-<nav class="glass" id="nav">
-<a href="#top" class="on">Home</a><a href="#work">Services</a><a href="#ideas">Ideas</a><a href="#products">Products</a><a href="#reviews" id="nrev" hidden>Reviews</a><a href="#about">About</a><a href="#contact">Contact</a>
+<div class="ld" id="ld"><b></b><i class="ll"></i><p class="ls">Design. Build. Promote.</p></div>
+<div class="bar" id="bar"></div><div class="glow"></div>
+<nav>
+<a class="lg" href="#home">SAIKAT</a>
+<div class="ln" id="ln"><a href="#home">Home</a><a href="#services">Services</a><a href="#work">Work</a><a href="#products">Products</a><a href="#tools">Tools</a><a href="#play">Play</a><a href="#about">About</a><a href="#contact">Contact</a><div class="mfoot"><a href="mailto:saikatbabd@gmail.com?subject=Project%20enquiry">Email</a><a href="https://t.me/hymrbairagee" target="_blank" rel="noopener">Telegram</a><a data-cal hidden href="#" target="_blank" rel="noopener">Book a call</a></div></div>
+<div class="nr">
+<button class="ic" id="srb" type="button" aria-label="Search and commands (Ctrl K)"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></button>
+<div class="th"><button class="ic" id="tmb" type="button" aria-label="Appearance" aria-haspopup="true" aria-expanded="false"></button><div class="pop tpop" id="tpop" role="menu"></div></div>
+<div class="tk"><button class="ct" id="tkb" aria-expanded="false" aria-haspopup="true">Let’s talk</button><div class="pop" id="pop"><a href="mailto:saikatbabd@gmail.com?subject=Project%20enquiry"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 8 8 6 8-6"/></svg>Email<small>Write me a message</small></a><a href="https://t.me/hymrbairagee" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24"><path d="M22 3 2 11l7 2.5L11.5 21l3-5.5L22 3zM9 13.5 22 3"/></svg>Telegram<small>Chat with me</small></a><a data-cal hidden href="#" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>Book a call<small>30 minutes</small></a><a href="#contact">All contact options<small>Open the contact page</small></a></div></div>
+<button class="ic mnb" id="mnb" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="ln"><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></button>
+</div>
 </nav>
 
-<section id="top">
-<div class="hello glass"><span class="dot"></span>Freelancing for 7+ years, working worldwide from Khulna</div>
-<h1>Design.<br>Build.<br>Promote.</h1>
-<div class="rot"><span id="word"></span><span class="caret"></span></div>
-<p class="lead">I’m Saikat Bairagi. I help small businesses look sharp, launch clean websites and get found online.</p>
-<div class="btns"><a class="btn p mag" href="#contact">Start a project</a><a class="btn g mag" href="#work">Explore services</a></div>
-<div class="scroll"><i></i>Scroll</div>
+<main>
+<!-- HOME -->
+<div class="pg on" data-p="home" data-t="Saikat Bairagi | Design, Websites and Digital Marketing">
+<section class="hero">
+<div class="pill rv"><i></i>Open for new projects<em>Khulna, <b class="clk"></b></em></div>
+<h1 class="rv"><span class="gt">Design.</span><br><span class="gt">Build.</span><br><span class="gg">Promote.</span></h1>
+<p class="m rv">Seven years of helping small businesses around the world look sharp, launch clean websites and get found online.</p>
+<div class="bt rv"><a class="b p mag" href="#contact">Start a project</a><a class="b l" href="#services">See what I do</a></div>
+<div class="dev" id="dev"><div class="tb"><i></i><i></i><i></i></div><div class="bd"><div class="art" data-art="m"></div><div class="art" data-art="d"></div><div class="art" data-art="w"></div></div></div>
 </section>
-
 <div class="mq"><div id="mq"></div></div>
-
-<section class="pin" id="work">
-<div class="stick">
-<div><h2>What I do,<br><em>one step at a time.</em></h2>
-<p>Keep scrolling and each service opens up.</p>
-<ul class="tabs"><i class="fill" id="fill"></i><li>Digital marketing</li><li>Design</li><li>Website development</li><li>Digital products</li></ul></div>
-<div class="glass wr">
-<article class="pn on"><h3>Digital marketing</h3><p>Promotion that puts your business in front of the right people, on the platforms where they already spend time.</p><div class="chips"><span>YouTube</span><span>Instagram</span><span>TikTok</span><span>Google Ads</span></div></article>
-<article class="pn"><h3>UI/UX design</h3><p>Clear, modern interfaces for websites and mobile apps, designed screen by screen and handed over ready to build.</p><div class="chips"><span>Website design</span><span>App design</span><span>Figma</span><span>Adobe XD</span></div></article>
-<article class="pn"><h3>Website development</h3><p>Fast, good-looking sites built to be understood in seconds, from a single landing page to a full small-business website.</p><div class="chips"><span>Landing pages</span><span>Personal portfolios</span><span>Small business sites</span></div></article>
-<article class="pn"><h3>Digital products</h3><p>Ready-to-use planners, guides and toolkits I design myself and sell on Gumroad.</p><div class="chips"><span>PDF guides</span><span>Excel toolkits</span><span>Budget planners</span></div></article>
+<section class="s"><div class="w"><p class="eb">Why it works</p><p class="stmt" id="stmt">Great brands are not loud, they are clear. I design, build and promote your online presence so the right people notice you, understand you and trust you.</p></div></section>
+<section class="s" style="padding-top:20px"><div class="w">
+<h2 class="rv"><span class="gt">Four ways</span> <span class="gg">to grow.</span></h2>
+<div class="bento">
+<a class="tile rv" href="#services"><div class="art" data-art="m"></div><div><h3>Digital marketing</h3><p>YouTube, Instagram, TikTok and Google Ads.</p></div></a>
+<a class="tile rv" href="#services"><div class="art" data-art="d"></div><div><h3>UI/UX design</h3><p>Websites and apps in Figma and Adobe XD.</p></div></a>
+<a class="tile rv" href="#services"><div class="art" data-art="w"></div><div><h3>Website development</h3><p>Landing pages, portfolios and small business sites.</p></div></a>
+<a class="tile rv" href="#products"><div class="art" data-art="p"></div><div><h3>Digital products</h3><p>Planners, guides and toolkits on Gumroad.</p></div></a>
+</div></div></section>
+<section class="s"><div class="w"><p class="eb rv">Process</p><h2 class="rv"><span class="gt">From first message</span><br><span class="gg">to launch.</span></h2>
+<div class="proc rv">
+<div class="pr"><i></i><svg class="pi" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg><h3>Talk</h3><p>You tell me about your business and your goals.</p></div>
+<div class="pr"><i></i><svg class="pi" viewBox="0 0 24 24"><path d="M4 20l1-5L16 4l4 4L9 19zM14 6l4 4"/></svg><h3>Design</h3><p>I shape the look, the layout and the feel.</p></div>
+<div class="pr"><i></i><svg class="pi" viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 5l-4 14"/></svg><h3>Build</h3><p>I turn the design into a fast, clean site or campaign.</p></div>
+<div class="pr"><i></i><svg class="pi" viewBox="0 0 24 24"><path d="M12 3c3 3 4 7 3 11H9c-1-4 0-8 3-11zM9 14l-3 4M15 14l3 4M12 9v.01"/></svg><h3>Launch</h3><p>We go live and check that everything works.</p></div>
+<div class="pr"><i></i><svg class="pi" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></svg><h3>Grow</h3><p>I help you improve using what the numbers show.</p></div>
+</div></div></section>
+<section class="s" style="overflow:hidden"><div class="w" style="text-align:center"><p class="eb rv">Tools</p><h2 class="rv"><span class="gt">What I work</span> <span class="gg">with.</span></h2>
+<div class="orbit rv"><div class="core">SAIKAT</div><div class="rot">
+<span style="--i:0"><b><i>Figma</i></b></span><span style="--i:1"><b><i>Adobe XD</i></b></span><span style="--i:2"><b><i>Google Ads</i></b></span><span style="--i:3"><b><i>YouTube</i></b></span><span style="--i:4"><b><i>Instagram</i></b></span><span style="--i:5"><b><i>TikTok</i></b></span>
+</div></div></div></section>
+<section class="s"><div class="w"><div class="stats">
+<div class="st rv" style="--p:.82"><svg viewBox="0 0 120 120"><circle class="t" cx="60" cy="60" r="52"/><circle class="f" cx="60" cy="60" r="52"/></svg><div><b class="gg" data-n="7" data-s="+">0</b><span>years freelancing</span></div></div>
+<div class="st rv" style="--p:1"><svg viewBox="0 0 120 120"><circle class="t" cx="60" cy="60" r="52"/><circle class="f" cx="60" cy="60" r="52"/></svg><div><b class="gg" data-n="4">0</b><span>service areas</span></div></div>
+<div class="st rv" style="--p:1"><svg viewBox="0 0 120 120"><circle class="t" cx="60" cy="60" r="52"/><circle class="f" cx="60" cy="60" r="52"/></svg><div><b class="gg" data-n="5" data-s=".0">0</b><span>Fiverr rating</span></div></div>
+</div></div></section>
+<section class="s" id="revs" hidden><div class="w"><p class="eb rv">Kind words</p><h2 class="rv"><span class="gt">Clients say it</span> <span class="gg">best.</span></h2><p class="m rv" style="margin-top:18px">A 5.0 average from 89 reviews on Fiverr. Here are a few of them.</p></div><div class="rvm"><div class="rvt" id="rvl"></div></div></section>
+<section class="s"><div class="w hw"><div class="rv"><p class="eb">Work</p><h2 class="gt">See how I design.</h2><p class="m" style="margin:18px 0 32px">Concept projects for a fitness studio, a salon, a café and a YouTube creator, each one built to show my process.</p><a class="b p mag" href="#work">View the work</a></div><div id="hm" class="rv"></div></div></section>
+<section class="s"><div class="w"><p class="eb rv">Free tools</p><h2 class="rv"><span class="gt">Try before</span> <span class="gg">you talk.</span></h2><p class="m rv" style="margin-top:18px">Small tools you can use right now. No sign-up, and nothing to send me.</p>
+<div class="mini">
+<a class="mn rv" href="#tools"><h3>Website readiness check</h3><p>Score your site in a minute.</p></a>
+<a class="mn rv" href="#tools"><h3>Ad budget calculator</h3><p>Estimate clicks and enquiries.</p></a>
+<a class="mn rv" href="#tools"><h3>Colour palette generator</h3><p>Five matching colours from one.</p></a>
+<a class="mn rv" href="#tools"><h3>Campaign link builder</h3><p>Track where visitors come from.</p></a>
+</div></div></section>
+<section class="s" style="padding-top:20px"><div class="w"><div class="brk rv"><div><p class="eb">Play</p><h2 class="gt">Need a break?</h2><p class="m" style="margin-top:14px">Four small games, right here. No sign-up, no ads.</p></div><a class="b p mag" href="#play">Play a game</a></div></div></section>
+<section class="s"><div class="w" style="max-width:820px"><h2 class="rv gt" style="margin-bottom:50px">Questions.</h2><div class="rv">
+<div class="fq"><button aria-expanded="false">How do we get started?</button><div class="an"><p>Send me a message on email or Telegram with a few lines about your business and what you need. I’ll reply with a clear next step.</p></div></div>
+<div class="fq"><button aria-expanded="false">Who do you work with?</button><div class="an"><p>Mostly small businesses and individuals around the world, through Fiverr, Upwork or directly.</p></div></div>
+<div class="fq"><button aria-expanded="false">Which tools do you use?</button><div class="an"><p>Figma and Adobe XD for design, and Google Ads with social platforms such as YouTube, Instagram and TikTok for promotion.</p></div></div>
+<div class="fq"><button aria-expanded="false">Do you use bots or fake views?</button><div class="an"><p>No. I focus on genuine, organic promotion for sustainable growth, with honest communication along the way.</p></div></div>
+<div class="fq"><button aria-expanded="false">I’m not sure what kind of website I need.</button><div class="an"><p>That’s fine. Tell me your type of business and I’ll suggest a simple structure, for example for a fitness studio, a salon or a personal portfolio.</p></div></div>
+</div></div></section>
+<section class="s" style="text-align:center"><div class="w"><h2 class="rv"><span class="gt">Have a business</span><br><span class="gg">to grow?</span></h2><div class="bt rv" style="margin-top:44px"><a class="b p mag" href="mailto:saikatbabd@gmail.com?subject=Project%20enquiry"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 8 8 6 8-6"/></svg>Email</a><a class="b g mag" href="https://t.me/hymrbairagee" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24"><path d="M22 3 2 11l7 2.5L11.5 21l3-5.5L22 3zM9 13.5 22 3"/></svg>Telegram</a><a class="b g mag" data-cal hidden href="#" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>Book a call</a></div></div></section>
 </div>
-</div>
-</section>
 
-<section id="ideas">
-<h2 class="rv">Website ideas for <em>your</em> business</h2>
-<p class="rv">Not sure what your site needs? Here is how I would approach a few popular types. These are concepts, not past client work.</p>
-<div class="grid">
-<article class="glass spot card tilt rv"><div class="mock"><i class="a"></i><i class="b"></i><i></i><i></i><i></i></div><h3>Fitness studio</h3><ul class="l"><li>Class schedule and booking button</li><li>Trainer profiles</li><li>Membership plans</li></ul></article>
-<article class="glass spot card tilt rv"><div class="mock"><i class="a"></i><i class="b"></i><i></i><i></i><i></i></div><h3>Beauty and salon</h3><ul class="l"><li>Services with clear prices</li><li>Before and after gallery</li><li>One-tap appointment request</li></ul></article>
-<article class="glass spot card tilt rv"><div class="mock"><i class="a"></i><i class="b"></i><i></i><i></i><i></i></div><h3>Personal portfolio</h3><ul class="l"><li>Your story and your best work</li><li>Skills and services</li><li>Contact in one click</li></ul></article>
+<!-- SERVICES -->
+<div class="pg" data-p="services" data-t="Services | Saikat Bairagi">
+<section class="hd"><p class="eb">Services</p><h1 class="gt" style="font-size:clamp(48px,9vw,120px)">Everything your<br><span class="gg">business needs online.</span></h1></section>
+<section class="s"><div class="w ft"><div class="rv"><p class="eb">Digital marketing</p><h2 class="gt">Be seen by the right people.</h2><p class="m" style="margin-top:22px">Genuine, organic promotion with no bots and no fake views. Built around YouTube and extended to Instagram, TikTok and Google Ads.</p><div class="chips"><span>YouTube</span><span>Instagram</span><span>TikTok</span><span>Google Ads</span></div><ul class="ck"><li>Campaign setup and ad copy</li><li>Audience and keyword research</li><li>Ongoing optimisation</li></ul></div><div class="art rv" data-art="m"></div></div></section>
+<section class="s lt"><div class="w ft r"><div class="rv"><p class="eb">UI/UX design</p><h2>Interfaces that feel obvious.</h2><p class="m" style="margin-top:22px">Clear, modern screens for websites and mobile apps, handed over ready to build.</p><div class="chips"><span>Website design</span><span>App design</span><span>Figma</span><span>Adobe XD</span></div><ul class="ck"><li>Wireframes and visual design</li><li>Clickable prototypes</li><li>Developer-ready files</li></ul></div><div class="art rv" data-art="d"></div></div></section>
+<section class="s"><div class="w ft"><div class="rv"><p class="eb">Website development</p><h2 class="gt">Fast. Clean. Yours.</h2><p class="m" style="margin-top:22px">From a single landing page to a complete small business website.</p><div class="chips"><span>Landing pages</span><span>Personal portfolios</span><span>Small business sites</span></div><ul class="ck"><li>Looks right on phone and desktop</li><li>Clean, fast code</li><li>Contact and booking buttons</li></ul></div><div class="art rv" data-art="w"></div></div></section>
+<section class="s lt"><div class="w"><p class="eb">Website ideas</p><h2 class="rv">Not sure what you need?</h2><p class="m rv" style="margin-top:18px">Concepts for popular types of sites, not past client work.</p>
+<div class="cards">
+<div class="cds rv"><h3>Fitness studio</h3><p>Class schedule, trainer profiles, membership plans and a booking button.</p></div>
+<div class="cds rv"><h3>Beauty and salon</h3><p>Clear service prices, a before and after gallery and one-tap appointments.</p></div>
+<div class="cds rv"><h3>Personal portfolio</h3><p>Your story, your best work, your skills and contact in one click.</p></div>
+</div></div></section>
+<section class="s"><div class="w" style="text-align:center"><h2 class="rv gt">Want to test the waters?</h2><p class="m rv" style="margin:18px auto 34px">Use my free tools first, then message me when you’re ready.</p><div class="bt rv"><a class="b p mag" href="#tools">Open free tools</a></div></div></section>
 </div>
-</section>
 
-<section id="products">
-<div class="glass prod rv">
-<div><h2>Digital products on <em>Gumroad</em></h2><p>Budget planners, a personal finance guide and an Excel money toolkit, designed to be simple and useful from the first minute.</p></div>
-<div><a class="btn p mag" href="https://YOUR_NAME.gumroad.com" target="_blank" rel="noopener">Visit my Gumroad</a></div>
+<!-- WORK -->
+<div class="pg" data-p="work" data-t="Work | Saikat Bairagi">
+<section class="hd"><p class="eb">Work</p><h1 class="gt" style="font-size:clamp(48px,9vw,120px)">Concepts that show<br><span class="gg">how I think.</span></h1><p class="m">Four concept projects I designed and built to show my process. They are not client work.</p></section>
+<section class="s" style="padding-top:20px"><div class="w" id="cs"></div></section>
+<section class="s" style="text-align:center"><div class="w"><h2 class="rv"><span class="gt">Want one like these</span><br><span class="gg">for your business?</span></h2><div class="bt rv" style="margin-top:40px"><a class="b p mag" href="#contact">Start a project</a><a class="b l" href="#tools">Try the free tools</a></div></div></section>
 </div>
-<div class="stats">
-<div class="glass stat rv"><b data-n="7" data-s="+">0</b><span>years freelancing</span></div>
-<div class="glass stat rv"><b data-n="4">0</b><span>service areas</span></div>
-<div class="glass stat rv"><b data-n="3">0</b><span>platforms: Fiverr, Upwork, Gumroad</span></div>
+
+<!-- PRODUCTS -->
+<div class="pg" data-p="products" data-t="Digital products | Saikat Bairagi">
+<section class="hd"><p class="eb">Digital products</p><h1 class="gt" style="font-size:clamp(48px,9vw,120px)">Made to be<br><span class="gg">useful on day one.</span></h1><p class="m">Guides, toolkits and planners I design myself and sell on Gumroad.</p></section>
+<section class="s"><div class="w"><div class="cards">
+<div class="cds rv"><div class="art" data-art="p"></div><h3>The Budget Blueprint</h3><p>A personal finance PDF guide for taking control of your money.</p><a class="vl" href="https://saikatbairagi.gumroad.com/" target="_blank" rel="noopener">View on Gumroad</a></div>
+<div class="cds rv"><div class="art" data-art="m"></div><h3>8-in-1 Excel Money Toolkit</h3><p>Eight spreadsheets that track spending, saving and goals.</p><a class="vl" href="https://saikatbairagi.gumroad.com/" target="_blank" rel="noopener">View on Gumroad</a></div>
+<div class="cds rv"><div class="art" data-art="w"></div><h3>Monthly Budget Planner</h3><p>A one-page printable planner with a bonus Google Sheets version.</p><a class="vl" href="https://saikatbairagi.gumroad.com/" target="_blank" rel="noopener">View on Gumroad</a></div>
+</div><div class="gw rv"><p class="m" style="margin:0 auto 34px">Everything is sold on Gumroad. Pick what helps and check out in a minute.</p><a class="gum mag" href="https://saikatbairagi.gumroad.com/" target="_blank" rel="noopener"><span class="gl"></span><span class="gt2">Shop on Gumroad</span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><small>Opens in a new tab</small></div></div></section>
 </div>
-</section>
 
-<section id="reviews" hidden>
-<h2 class="rv">Kind words</h2>
-<div class="grid" id="revs"></div>
-</section>
-
-<section id="about">
-<div class="about">
-<div class="glass ph rv"><img src="assets/saikat.jpg" alt="Portrait of Saikat Bairagi" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('b'),{textContent:'SB',className:'mono'}))"></div>
-<div class="rv"><h2>Hi, I’m <em>Saikat.</em></h2>
-<p>I’m a freelancer from Khulna, Bangladesh, with more than seven years of experience across digital marketing, UI/UX design and website development. I work with small businesses around the world, mostly through Fiverr and Upwork, and I care about clear communication, tidy work and deadlines kept.</p></div>
+<!-- ABOUT -->
+<div class="pg" data-p="about" data-t="About | Saikat Bairagi">
+<section class="s" style="padding-top:calc(48px + 16vh)"><div class="w abt">
+<div class="pf rv"><i class="r1"></i><i class="r2"></i><i class="r3"></i><span class="or"><b></b></span><span class="or o2"><b></b></span><div class="pimg"><img src="assets/saikat.jpg" alt="Portrait of Saikat Bairagi" onerror="this.replaceWith(Object.assign(document.createElement('b'),{textContent:'SB'}))"></div></div>
+<div class="rv"><p class="eb">About</p><h2 class="gt">Hi, I’m Saikat.</h2><p class="m" style="margin-top:24px">I’m a freelancer from Khulna, Bangladesh, with more than seven years of experience in digital marketing, UI/UX design and website development. I work with small businesses around the world, mostly through Fiverr and Upwork, and I care about clear communication, tidy work and deadlines kept. On Fiverr I help YouTube creators grow through real, organic promotion across gaming, music, vlogs and tutorials.</p>
+<div class="chips"><span>Figma</span><span>Adobe XD</span><span>Google Ads</span><span>YouTube</span><span>Instagram</span><span>TikTok</span><span>Data analysis</span><span>Virtual assistance</span><span>Lead generation</span></div></div>
+</div></section>
+<section class="s lt"><div class="w"><p class="eb rv">At a glance</p><h2 class="rv">Quick facts.</h2><div class="facts">
+<div class="fc rv"><span>Based in</span><b>Khulna, Bangladesh</b></div>
+<div class="fc rv"><span>Local time right now</span><b class="clk"></b></div>
+<div class="fc rv"><span>Experience</span><b>7+ years freelancing</b></div>
+<div class="fc rv"><span>Works with</span><b>Clients worldwide</b></div>
+<div class="fc rv"><span>Fastest way to reach me</span><b>Telegram or Email</b></div>
+<div class="fc rv"><span>Where I sell</span><b>Fiverr, Upwork, Gumroad</b></div>
+</div></div></section>
+<section class="s"><div class="w"><p class="eb rv">Principles</p><h2 class="rv gt">How I work.</h2><div class="cards">
+<div class="cds rv"><svg class="pi" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg><h3>Clear communication</h3><p>Plain language, quick answers and no surprises.</p></div>
+<div class="cds rv"><svg class="pi" viewBox="0 0 24 24"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></svg><h3>Tidy work</h3><p>Organised files and clean, well-named layers and code.</p></div>
+<div class="cds rv"><svg class="pi" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zM12 7v5l3 2"/></svg><h3>Deadlines kept</h3><p>If something changes, you hear it from me early.</p></div>
+</div></div></section>
+<section class="s" style="text-align:center"><div class="w"><h2 class="rv"><span class="gt">Let’s work</span> <span class="gg">together.</span></h2><div class="bt rv" style="margin-top:40px"><a class="b p mag" href="mailto:saikatbabd@gmail.com?subject=Project%20enquiry"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 8 8 6 8-6"/></svg>Email</a><a class="b g mag" href="https://t.me/hymrbairagee" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24"><path d="M22 3 2 11l7 2.5L11.5 21l3-5.5L22 3zM9 13.5 22 3"/></svg>Telegram</a><a class="b g mag" data-cal hidden href="#" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>Book a call</a></div></div></section>
 </div>
-</section>
 
-<section id="contact">
-<div class="glass contact rv">
-<h2>Let’s build something <em>good.</em></h2>
-<p>Tell me about your business and what you need. I’ll reply with a clear next step.</p>
-<a class="btn p mag" href="mailto:YOUR_EMAIL@example.com">Send me an email</a>
-<div class="links">
-<a href="https://www.fiverr.com/YOUR_FIVERR_USERNAME" target="_blank" rel="noopener">Fiverr</a>
-<a href="https://www.upwork.com/freelancers/YOUR_UPWORK_ID" target="_blank" rel="noopener">Upwork</a>
-<a href="https://YOUR_NAME.gumroad.com" target="_blank" rel="noopener">Gumroad</a>
-<a href="https://github.com/saikat-bairagi" target="_blank" rel="noopener">GitHub</a>
-</div></div>
-</section>
-<footer>&copy; <span id="yr"></span> Saikat Bairagi. Built in Khulna.</footer>
+<!-- CONTACT -->
+<div class="pg" data-p="contact" data-t="Contact | Saikat Bairagi">
+<section class="s" style="text-align:center;min-height:100svh;display:flex;align-items:center"><div class="w">
+<div class="pill rv"><i></i>Local time in Khulna<em><b class="clk"></b></em></div><p class="eb rv">Contact</p><h1 class="big rv"><span class="gt">Let’s build</span><br><span class="gg">something good.</span></h1>
+<p class="m rv" style="margin:28px auto 40px">Tell me about your business and what you need. I’ll reply with a clear next step.</p>
+<div class="bt rv"><a class="b p mag" href="mailto:saikatbabd@gmail.com?subject=Project%20enquiry"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 8 8 6 8-6"/></svg>Email</a><a class="b g mag" href="https://t.me/hymrbairagee" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24"><path d="M22 3 2 11l7 2.5L11.5 21l3-5.5L22 3zM9 13.5 22 3"/></svg>Telegram</a><a class="b g mag" data-cal hidden href="#" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>Book a call</a></div>
+<div class="lk rv"><a href="https://saikatbairagi.gumroad.com/" target="_blank" rel="noopener">Gumroad</a><a href="https://github.com/saikat-bairagi" target="_blank" rel="noopener">GitHub</a></div>
+</div></section>
+<section class="s" id="brief"><div class="w" style="max-width:820px"><p class="eb rv">Project brief</p><h2 class="rv gt">Tell me the basics.</h2><p class="m rv" style="margin:16px 0 40px">Fill this in and press send. It goes straight to my inbox, and I will reply by email.</p>
+<form class="bf rv" id="bform" novalidate>
+<label>Your name<input id="bn" name="name" placeholder="Jane Smith" autocomplete="name"></label>
+<label>Your email<input id="be" name="email" type="email" placeholder="jane@company.com" autocomplete="email"></label>
+<label class="wide">What do you need?<select id="bs" name="service"><option>Website or landing page</option><option>UI/UX design</option><option>Google Ads</option><option>Social media promotion</option><option>Something else</option></select></label>
+<label class="wide">About your business and goals<textarea id="bm" name="message" rows="4" placeholder="A few lines are enough."></textarea></label>
+<input class="hp" id="bh" name="_honey" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
+<div class="bt wide" style="justify-content:flex-start"><button class="b p mag" id="bsend" type="submit">Send message</button><button class="b g" id="bcopy" type="button">Copy for Telegram</button></div>
+<p class="bst wide" id="bst" role="status"></p>
+</form>
+<div class="bok" id="bok" hidden><svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l8 8 15-17"/></svg><h3>Thank you, <span id="bokn"></span>.</h3><p class="m" style="margin:10px auto 0">Your message is on its way to my inbox. I will reply to you by email.</p><p class="tv" id="bokp"></p><button class="b g" id="bagain" type="button">Send another</button></div>
+</div></section>
+<section class="s" id="cal" hidden><div class="w" style="text-align:center;max-width:860px"><p class="eb rv">Book a call</p><h2 class="rv gt">Prefer to talk?</h2><p class="m rv" style="margin:18px auto 34px">Pick a time that suits you for a 30 minute call.</p><div class="bt rv"><a class="b p mag" data-cal hidden href="#" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>Book a 30 minute call</a></div></div></section>
+</div>
+
+<!-- TOOLS -->
+<div class="pg" data-p="tools" data-t="Free tools | Saikat Bairagi">
+<section class="hd"><p class="eb">Free tools</p><h1 class="gt" style="font-size:clamp(48px,9vw,120px)">Try it yourself.<br><span class="gg">No sign-up.</span></h1><p class="m">Thirteen small tools for business owners. They run in your browser: nothing is sent to me and nothing is stored.</p></section>
+<section class="s"><div class="w"><div class="fl2 rv" id="fl2"><button class="on" data-f="all">All</button><button data-f="marketing">Marketing</button><button data-f="design">Design</button><button data-f="web">Website</button></div><div class="tg">
+<div class="tc rv" data-cat="web"><p class="eb">Website readiness check</p><h3>How ready is your website?</h3><p class="tp">Tick everything that is true for your site.</p>
+<div class="rd"><div class="rr"><svg viewBox="0 0 120 120"><circle class="t" cx="60" cy="60" r="52"/><circle class="f" id="rf" cx="60" cy="60" r="52"/></svg><b id="rs">0%</b></div><div class="rl" id="rl"></div></div>
+<p class="tv" id="rm">Tick a few boxes to see your score.</p><a class="b g" href="#contact" style="align-self:flex-start">Improve my score</a></div>
+<div class="tc rv" data-cat="marketing"><p class="eb">Ad budget calculator</p><h3>What could your ad budget do?</h3>
+<div class="sl"><label>Monthly ad budget <output id="o1">$500</output><input type="range" id="a1" min="50" max="5000" step="50" value="500"></label>
+<label>Cost per click <output id="o2">$1.20</output><input type="range" id="a2" min="0.1" max="10" step="0.1" value="1.2"></label>
+<label>Visitors who enquire or buy <output id="o3">3%</output><input type="range" id="a3" min="0.5" max="15" step="0.5" value="3"></label></div>
+<div class="kp"><div><b id="k1">0</b><span>clicks</span></div><div><b id="k2">0</b><span>enquiries or sales</span></div><div><b id="k3">$0</b><span>cost each</span></div></div>
+<p class="tv">An estimate for planning only. Real results depend on your market and offer.</p></div>
+<div class="tc rv" data-cat="design"><p class="eb">Colour palette generator</p><h3>Five colours that go together.</h3>
+<div class="pr2"><input type="color" id="pc" value="#0b6b43" aria-label="Base colour"><button class="b g" id="pshuf" type="button">Shuffle</button></div>
+<div class="sw" id="sw"></div><p class="tv" id="pm">Click a colour to copy its code.</p></div>
+<div class="tc rv" data-cat="marketing"><p class="eb">Campaign link builder</p><h3>Track where visitors come from.</h3>
+<div class="fm"><label class="wide">Website link<input id="u1" placeholder="https://yourwebsite.com"></label><label>Source<input id="u2" placeholder="instagram"></label><label>Medium<input id="u3" placeholder="social"></label><label class="wide">Campaign<input id="u4" placeholder="spring-offer"></label></div>
+<div class="out" id="uo">Your link will appear here.</div><button class="b g" id="uc" type="button" style="align-self:flex-start">Copy link</button></div>
+<div class="tc rv" data-cat="marketing"><p class="eb">Ad copy counter</p><h3>Will your text fit?</h3>
+<label class="lb">Paste your text<textarea id="ac" rows="4" placeholder="Type or paste a headline, caption or description"></textarea></label>
+<div class="lim" id="lim"></div><p class="tv">Platform limits change from time to time, so check the platform before you publish.</p></div>
+<div class="tc rv" data-cat="web marketing"><p class="eb">Search result preview</p><h3>How will you look on Google?</h3>
+<div class="fm"><label class="wide">Page title<input id="s1" placeholder="Fitness studio in Khulna | Pulse"></label><label class="wide">Meta description<textarea id="s2" rows="3" placeholder="One or two sentences about the page."></textarea></label><label class="wide">Page link<input id="s3" placeholder="https://yourwebsite.com/classes"></label></div>
+<div class="gp"><span id="pv3">yourwebsite.com</span><b id="pv1">Your page title appears here</b><p id="pv2">Your description appears here.</p></div>
+<div class="cn"><span id="cn1">Title 0/60</span><span id="cn2">Description 0/160</span></div>
+<button class="b g" id="s4" type="button" style="align-self:flex-start">Copy meta tags</button></div>
+<div class="tc rv" data-cat="design web"><p class="eb">Contrast checker</p><h3>Is your text easy to read?</h3>
+<div class="pr2"><label class="cl">Text<input type="color" id="ka" value="#ffffff"></label><label class="cl">Background<input type="color" id="kb" value="#0e0f13"></label></div>
+<div class="cx" id="cx">Sample text. The quick brown fox.</div><div class="rt"><b id="cr">0:1</b><span id="r1">Normal text</span><span id="r2">Large text</span></div></div>
+<div class="tc rv" data-cat="design web"><p class="eb">Image compressor</p><h3>Make images smaller and faster.</h3>
+<label class="drop">Choose an image<input type="file" id="im" accept="image/*"></label>
+<div class="sl"><label>Quality <output id="oq">75%</output><input type="range" id="iq" min="30" max="95" step="5" value="75"></label><label>Maximum width <output id="ow">1600px</output><input type="range" id="iw" min="320" max="3000" step="40" value="1600"></label></div>
+<div class="out" id="io">Nothing is uploaded. Your image stays in your browser.</div><a class="b g" id="idl" download="compressed.jpg" hidden style="align-self:flex-start">Download image</a></div>
+<div class="tc rv" data-cat="marketing web"><p class="eb">QR code generator</p><h3>Turn any link into a QR code.</h3>
+<label class="lb">Link or text<input id="qt" placeholder="https://yourwebsite.com"></label>
+<div class="qr" id="qr">Your QR code appears here.</div><a class="b g" id="qd" download="qr-code.svg" hidden style="align-self:flex-start">Download SVG</a><p class="tv">Built with the open-source qrcode-generator library.</p></div>
+<div class="tc rv" data-cat="design marketing"><p class="eb">Social media sizes</p><h3>The right size for every platform.</h3><div class="sz" id="sz"></div><p class="tv">Click a size to copy it. Platforms change sizes now and then.</p></div>
+<div class="tc rv" data-cat="marketing"><p class="eb">ROAS and profit calculator</p><h3>Are your ads paying off?</h3>
+<div class="sl"><label>Ad spend <output id="r1o">$1,000</output><input type="range" id="q1" min="50" max="20000" step="50" value="1000"></label><label>Revenue from ads <output id="r2o">$3,500</output><input type="range" id="q2" min="0" max="100000" step="100" value="3500"></label><label>Product or service costs <output id="r3o">$1,200</output><input type="range" id="q3" min="0" max="80000" step="100" value="1200"></label></div>
+<div class="kp"><div><b id="p1">0</b><span>ROAS</span></div><div><b id="p2">$0</b><span>profit</span></div><div><b id="p3">0%</b><span>ROI</span></div></div></div>
+<div class="tc rv" data-cat="design web"><p class="eb">CSS gradient generator</p><h3>Create a smooth gradient.</h3>
+<div class="pr2"><input type="color" id="gr1" value="#0b6b43"><input type="color" id="gr2" value="#8ff0b5"><button class="b g" id="gr4" type="button">Flip</button></div>
+<div class="sl"><label>Angle <output id="gro">135deg</output><input type="range" id="gr3" min="0" max="360" value="135"></label></div>
+<div class="gv" id="grv"></div><div class="out" id="grc"></div><button class="b g" id="grb" type="button" style="align-self:flex-start">Copy CSS</button></div>
+<div class="tc rv" data-cat="marketing"><p class="eb">Word counter</p><h3>Count words and reading time.</h3><textarea id="wc" rows="5" placeholder="Paste your text here"></textarea>
+<div class="kp"><div><b id="w1">0</b><span>words</span></div><div><b id="w2">0</b><span>characters</span></div><div><b id="w3">0</b><span>min read</span></div></div></div>
+</div></div></section>
+</div>
+<!-- PLAY -->
+<div class="pg" data-p="play" data-t="Play | Saikat Bairagi">
+<section class="hd"><p class="eb">Play</p><h1 class="gt" style="font-size:clamp(48px,9vw,120px)">Take a short<br><span class="gg">break.</span></h1><p class="m">Four small games that run right here. No sign-up, no ads, and they work on phone and desktop.</p></section>
+<section class="s" style="padding-top:20px"><div class="w"><div class="gm-tabs" id="gtabs" role="tablist"><button class="on" data-g="2048" type="button">2048</button><button data-g="snake" type="button">Snake</button><button data-g="memory" type="button">Memory</button><button data-g="stack" type="button">Stack</button></div><div id="gm"></div></div></section>
+</div>
+</main>
+<div class="cp" id="cp" aria-hidden="true"><div class="cpb" role="dialog" aria-label="Command palette"><input id="cpi" placeholder="Type a command or page" autocomplete="off" aria-label="Command palette"><div class="cpl" id="cpl"></div></div></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<a class="fab" href="https://t.me/hymrbairagee" target="_blank" rel="noopener" aria-label="Message me on Telegram"><svg viewBox="0 0 24 24"><path d="M22 3 2 11l7 2.5L11.5 21l3-5.5L22 3zM9 13.5 22 3"/></svg><span>Message me</span></a><button class="up" id="up" aria-label="Back to top"><svg viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+<footer><div class="fl"><a href="mailto:saikatbabd@gmail.com?subject=Project%20enquiry">Email</a><a href="https://t.me/hymrbairagee" target="_blank" rel="noopener">Telegram</a><a href="https://saikatbairagi.gumroad.com/" target="_blank" rel="noopener">Gumroad</a><a href="https://github.com/saikat-bairagi" target="_blank" rel="noopener">GitHub</a></div>&copy; <span id="yr"></span>. Designed and built by Saikat Bairagi. Local time in Khulna: <span class="clk"></span><br>Tip: press Ctrl or Cmd + K for quick commands.</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
-<script>
-(()=>{
-const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
-const root=document.documentElement,reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
-$('#yr').textContent=new Date().getFullYear();
-/* Real client reviews only: add {text:"...",name:"...",from:"Fiverr"} here */
-const REVIEWS=[];
-if(REVIEWS.length){$('#reviews').hidden=false;$('#nrev').hidden=false;
- $('#revs').innerHTML=REVIEWS.map(r=>`<article class="glass rev rv"><p>“${r.text}”</p><small>${r.name}, ${r.from}</small></article>`).join('')}
-const tags=['Social media promotion','Google Ads','UI/UX design','Figma','Adobe XD','Landing pages','Portfolio sites','Gumroad products'];
-$('#mq').innerHTML=[...tags,...tags,...tags].map(t=>`<span>${t}</span>`).join('');
-const words=['UI/UX in Figma and Adobe XD','Landing pages and portfolio sites','YouTube, Instagram and TikTok promotion','Google Ads management'];
-let wi=0,ci=0,del=false;const el=$('#word');
-(function type(){const w=words[wi];el.textContent=w.slice(0,ci);
- if(!del&&ci===w.length){del=true;return setTimeout(type,1800)}
- if(del&&ci===0){del=false;wi=(wi+1)%words.length}
- ci+=del?-1:1;setTimeout(type,del?28:60)})();
-const pin=$('#work'),pns=$$('.pn'),tabs=$$('.tabs li');
-function pinUpdate(){const r=pin.getBoundingClientRect(),p=Math.min(1,Math.max(0,-r.top/(r.height-innerHeight)));
- const i=Math.min(pns.length-1,Math.floor(p*pns.length));
- pns.forEach((e,k)=>e.classList.toggle('on',k===i));tabs.forEach((e,k)=>e.classList.toggle('on',k===i));
- $('#fill').style.transform=`scaleY(${p})`}
-const onScroll=y=>{const h=root.scrollHeight-innerHeight;$('#bar').style.transform=`scaleX(${h>0?y/h:0})`;pinUpdate();
- if(!reduce){$('.o1').style.transform=`translateY(${y*.1}px)`;$('.o2').style.transform=`translateY(${-y*.06}px)`;$('.o3').style.transform=`translateX(${y*.04}px)`}};
-let lenis=null;
-if(window.Lenis&&!reduce){lenis=new Lenis({duration:1.2,easing:t=>Math.min(1,1.001-Math.pow(2,-10*t))});
- lenis.on('scroll',e=>onScroll(e.scroll));const raf=t=>{lenis.raf(t);requestAnimationFrame(raf)};requestAnimationFrame(raf)}
-else addEventListener('scroll',()=>onScroll(scrollY),{passive:true});
-onScroll(0);
-$$('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=$(a.getAttribute('href'));if(!t)return;e.preventDefault();
- lenis?lenis.scrollTo(t):t.scrollIntoView({behavior:'smooth'})}));
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add('in');io.unobserve(e.target);
- setTimeout(()=>e.target.classList.add('done'),1500);const n=e.target.querySelector('[data-n]');if(n)count(n)}),{threshold:.18});
-$$('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%3)*90+'ms';io.observe(el)});
-function count(n){const to=+n.dataset.n,s=n.dataset.s||'';let t0;const f=t=>{t0??=t;const p=Math.min((t-t0)/1400,1);
- n.textContent=Math.round(to*(1-Math.pow(1-p,3)))+(p===1?s:'');if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)}
-const links=$$('#nav a'),so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(l=>l.classList.toggle('on',l.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-45% 0px -50% 0px'});
-$$('section').forEach(s=>so.observe(s));
-if(matchMedia('(pointer:fine)').matches&&!reduce){
- let tx=innerWidth/2,ty=innerHeight/3,x=tx,y=ty;
- addEventListener('pointermove',e=>{tx=e.clientX;ty=e.clientY;root.style.setProperty('--h',Math.round(215+(tx/innerWidth)*50+(ty/innerHeight)*15))});
- (function loop(){x+=(tx-x)*.12;y+=(ty-y)*.12;root.style.setProperty('--mx',x+'px');root.style.setProperty('--my',y+'px');requestAnimationFrame(loop)})();
- $$('.spot').forEach(c=>c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect();c.style.setProperty('--x',e.clientX-r.left+'px');c.style.setProperty('--y',e.clientY-r.top+'px')}));
- $$('.tilt').forEach(c=>{c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect(),px=(e.clientX-r.left)/r.width-.5,py=(e.clientY-r.top)/r.height-.5;c.style.transform=`rotateY(${px*9}deg) rotateX(${-py*9}deg) translateZ(8px)`});c.addEventListener('pointerleave',()=>c.style.transform='')});
- $$('.mag').forEach(b=>{b.addEventListener('pointermove',e=>{const r=b.getBoundingClientRect();b.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.25}px,${(e.clientY-r.top-r.height/2)*.35}px)`});b.addEventListener('pointerleave',()=>b.style.transform='')});
-}
-})();
-</script>
+<script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.js"></script>
+<script type="module" src="js/main.js"></script>
 </body>
 </html>
